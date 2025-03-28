@@ -56,3 +56,16 @@ footer {
 .contact a:hover {
     text-decoration: underline; /* إضافة تأثير عند التحويم */
 }
+.about {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
