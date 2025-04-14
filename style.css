@@ -1,71 +1,114 @@
-.profile-pic {
-    width: 150px; /* حجم الصورة */
-    height: 150px;
-    border-radius: 50%; /* يجعل الصورة دائرية */
-    display: block;
-    margin: 20px auto; /* يوسّط الصورة */
-    border: 3px solid #fff; /* إطار للصورة */
-}
-
-
+/* إعدادات أساسية */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
 }
 
+/* تنسيق الرأس */
 header {
+    text-align: center;
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 40px 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
 }
 
 h1 {
-    margin: 0;
-}
-
-.contact, .about, .projects {
-    margin: 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.project {
+    font-size: 2.5em;
     margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* تنسيق الأقسام */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact p, .about p, .skills li {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.contact p, .about p {
+    font-size: 1.2em;
+}
+
+.projects .project {
+    margin-bottom: 20px;
+}
+
+/* تنسيق المهارات */
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skills li {
+    background-color: #f2f2f2;
+    padding: 15px 30px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+.skills li:hover {
+    transform: scale(1.05);
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* تنسيق التذييل */
 footer {
     background-color: #333;
     color: white;
-    padding: 10px;
-    margin-top: 20px;
-}
-.contact a {
-    color: #007bff; /* لون أزرق أنيق */
-    text-decoration: none; /* إزالة التسطير */
-    font-weight: bold;
-}
-
-.contact a:hover {
-    text-decoration: underline; /* إضافة تأثير عند التحويم */
-}
-.about {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
-.about p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 10px 0;
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* تنسيق الروابط */
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff6f61;
 }
