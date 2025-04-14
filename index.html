@@ -5,28 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khacef Adal - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- تضمين مكتبة AOS لتأثيرات التمرير -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-    <header>
+    <!-- شريط التنقل العائم -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header data-aos="fade-up">
         <img src="1741440569369.jpg" alt="Khacef Adal" class="profile-pic">
         <h1>Khacef Adal</h1>
         <p>Designer</p>
     </header>
 
-    <section class="contact">
+    <section class="contact" id="contact" data-aos="fade-up">
         <h2>📞 Contact Information</h2>
         <p><strong>📍 Address:</strong> Ouled Ben Abdlkder, Chlef</p>
         <p><strong>📞 Phone:</strong> <a href="tel:+2130561140800">+213 0561 140 800</a></p>
         <p><strong>✉ Email:</strong> <a href="mailto:khacefadal@gmail.com">khacefadal@gmail.com</a></p>
     </section>
 
-    <section class="about">
+    <section class="about" id="about" data-aos="fade-up">
         <h2>🖌️ About Me</h2>
         <p>I am a designer who loves creativity and pays attention to the smallest details. I strive to turn ideas into beautiful and functional designs that reflect the client’s identity.</p>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects" data-aos="fade-up">
         <h2>🚀 Projects</h2>
         <div class="project">
             <h3>Project 1</h3>
@@ -38,7 +50,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills" data-aos="fade-up">
         <h2>🛠️ My Skills</h2>
         <ul>
             <li>HTML & CSS</li>
@@ -48,9 +60,30 @@
         </ul>
     </section>
 
-    <footer>
+    <!-- قسم الشهادات -->
+    <section class="testimonials" data-aos="fade-up">
+        <h2>💬 Testimonials</h2>
+        <div class="testimonial">
+            <p>"Khacef is a fantastic designer! He truly understands the client's needs and delivers exceptional designs."</p>
+            <p>- Client Name</p>
+        </div>
+        <div class="testimonial">
+            <p>"Great experience working with Khacef. Highly recommended for any design project!"</p>
+            <p>- Client Name</p>
+        </div>
+    </section>
+
+    <!-- زر الاتصال العائم -->
+    <a href="mailto:khacefadal@gmail.com" class="contact-btn">📧 Contact Me</a>
+
+    <footer data-aos="fade-up">
         <p>© 2025 Khacef Adal. All rights reserved.</p>
     </footer>
 
+    <!-- تضمين مكتبة AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init(); // تفعيل تأثيرات AOS
+    </script>
 </body>
-                       </html>
+</html>
